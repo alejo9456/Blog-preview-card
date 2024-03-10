@@ -1,0 +1,103 @@
+@font-face {
+    font-family: figbold;
+    src: url('../assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: fig;
+    src: url('../assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
+    font-weight: 500;
+}
+
+:root {
+    --color-yellow:#F4D04E;
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 50%);
+    --color-black: hsl(0, 0%, 7%);
+}
+
+* {
+   font-family: 'Fig', sans-serif;
+   font-size: 62.5%;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+    background-color: var(--color-yellow);
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border-radius: 2rem;
+    box-shadow: 10px 10px 0px 0px black;
+    border-radius: 1rem;
+    background-color: var(--color-white) ;
+    padding: 2.6rem;
+    width: 32.6rem;
+    height: 50.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__image {
+    border-radius: 0.8rem;
+    margin-bottom: 2.4rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.card__tag {
+  font-size: 1.2rem;
+  font-family: 'figbold';
+  padding: 0.8rem 1rem; 
+  border-radius: 0.2rem;
+  background-color: var(--color-yellow);
+  margin-bottom: 1rem;
+  align-self: flex-start; 
+}
+
+.card__publication-date{
+    font-size: 1rem;
+    margin-bottom: 2.4rem;
+}
+
+.card__title {
+  font-size: 1.6rem;
+  font-family: 'figbold';
+  margin-bottom: 2.4rem;
+  cursor: pointer;
+}
+
+.card__title:hover {
+    color: var(--color-yellow);
+}
+
+.card__description {
+    font-family: 'Fig';
+    font-weight;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2.4rem;
+    color: var(--color-grey);
+}
+
+.card__author-details{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.card__author-image {
+    width: 2rem;
+}
+
+.card__author-name{
+    font-size: 1.2rem;
+    font-family: 'figbold';
+}
